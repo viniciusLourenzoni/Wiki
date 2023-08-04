@@ -1,0 +1,24 @@
+<%- include ('partials/header.ejs') %> <!--Partials importando Header-->
+<body>
+    <%- include ('partials/navbar.ejs') %> <!--Partials importando Navbar-->
+    <div class="container">
+        <div class="card" id="formulario-pergunta"> 
+            <div class="card-header">
+                <h3>Realizar Pergunta</h3>
+            </div>
+
+            <div class="card-body">
+                <form name="formulario" method="POST" action="/salvarpergunta"> <!--post faz com que o envio das informações para o backend fique escondido do usuário-->
+                    <label for="titulo">Título</label>
+                    <input name="titulo" type="text" placeholder="Título" class="form-control">
+                    <br>
+                    <label>Descrição</label>
+                    <textarea name="descricao" class="form-control descricao" placeholder="Descreva sua pergunta aqui"></textarea> <!-- Form control é classe do bootstrap para estilizar formulário -->
+                    <br>
+                    <button class="btn btn-primary" btn-block>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs') %> <!--Partials importando Footer-->

@@ -1,0 +1,30 @@
+body{
+    background-color:  lightblue
+}
+
+#formulario-pergunta{
+    margin-top: 50px;
+}
+
+#logotipo{
+    margin-left: 20px;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+html,body{
+    height: 100%;
+}
+
+#Titulo{
+    margin-bottom: 20px;
+}
+
+.descricao{
+    height: 130px;
+}
